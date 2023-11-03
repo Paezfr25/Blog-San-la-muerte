@@ -15,7 +15,12 @@ body {
     padding: 10px;
   }
   
+ h1, h2, h3 {
+  user-select: none;
+ }
+
   h1 {
+    
     font-size: 2em;
     margin: 0;
     text-align: center;
@@ -53,6 +58,7 @@ body {
 .icono {
      fill: rgb(255, 255, 255);
   }
+
 
   .container {
     width: 100%;
@@ -99,34 +105,34 @@ body {
   }
   
   li a:hover {
-    background-color: #555;
+    background-color: #777;
+    border-radius: 50%;
+    transition: 0.7s;
   }
   
   section {
     padding: 50px;
   }
 
-  .back-to-top {
-    display: auto;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    text-align: center;
-    background-color: #444;
-    color: #fff;
-    font-size: 14px;
-    text-decoration: none;
-    border-radius: 50%;
-  }
-  
-  .back-to-top:hover {
-    background-color: #555;
-  }
+  .hidden {
+    display: none;
+}
 
   #ulnav{
     text-align: center;
     
+  }
+
+  #btnVolverArriba {
+    display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #777;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
   }
